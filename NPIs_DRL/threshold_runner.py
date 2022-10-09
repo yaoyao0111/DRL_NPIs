@@ -28,7 +28,7 @@ def generate_thre_tra(env,num):
     for _ in range(1000):
         state_l = env.featurize(state)
         if state_l[0] + state_l[1] > num:
-            action = 3
+            action = 1
         else:
             if state['continue_t'] < 6:
                 action=int(state['last_act'])
